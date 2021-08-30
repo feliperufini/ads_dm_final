@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:ads_dm_final/components/usrer_tile.dart';
-import 'package:ads_dm_final/models/user.dart';
 import 'package:ads_dm_final/provider/users.dart';
 import 'package:ads_dm_final/routes/app_routes.dart';
 import 'package:provider/provider.dart';

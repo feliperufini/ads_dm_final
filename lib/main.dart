@@ -1,3 +1,4 @@
+import 'package:ads_dm_final/views/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:ads_dm_final/provider/users.dart';
 import 'package:ads_dm_final/routes/app_routes.dart';
@@ -22,10 +23,15 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
+          elevatedButtonTheme: ElevatedButtonThemeData(
+            style: TextButton.styleFrom(backgroundColor: Colors.green),
+          ),
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
+        initialRoute: AppRoutes.LOGIN,
         routes: {
           AppRoutes.HOME: (_) => UserList(),
+          AppRoutes.LOGIN: (_) => LoginPage(),
           AppRoutes.USER_FORM: (_) => UserForm(),
         },
       ),
