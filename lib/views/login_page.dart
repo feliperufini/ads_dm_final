@@ -46,12 +46,12 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(height: 15),
                 ElevatedButton(
                   onPressed: () {
+                    // if (email == '123' && senha == '123') {
                     if (email == 'professor@gmail.com' && senha == '1234') {
-                      Navigator.of(context).pushNamed(
-                        AppRoutes.HOME,
-                      );
+                      Navigator.of(context).pushNamedAndRemoveUntil(
+                          AppRoutes.HOME, (Route<dynamic> route) => false);
                     } else {
-                      print('erro2');
+                      print('Erro ao realizar login');
                     }
                   },
                   child: Text('Entrar'),

@@ -22,13 +22,14 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
+          fontFamily: 'Raleway',
           primarySwatch: Colors.blue,
           elevatedButtonTheme: ElevatedButtonThemeData(
             style: TextButton.styleFrom(backgroundColor: Colors.green),
           ),
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        initialRoute: AppRoutes.LOGIN,
+        initialRoute: AppRoutes.HOME,
         routes: {
           AppRoutes.HOME: (_) => UserList(),
           AppRoutes.LOGIN: (_) => LoginPage(),
