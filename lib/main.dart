@@ -30,6 +30,11 @@ class MyApp extends StatelessWidget {
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         initialRoute: AppRoutes.HOME,
+        // routes: {
+        //     '/': (context) => HomeScreen(),
+        //     '/two': (context) => TwoScreen(),
+        //     '/three': (context) => ThreeScreen(),
+        //   },
         routes: {
           AppRoutes.HOME: (_) => UserList(),
           AppRoutes.LOGIN: (_) => LoginPage(),
